@@ -1,0 +1,86 @@
+<DOCTYPE.html>
+    <html>
+        <head>
+            <title>Contador 60</title>
+            <style>
+                *{
+                    margin: o;
+                    box-sizing: border-box;
+                }
+                body{
+                    
+                    min-height: 100vh;
+                    background: greenyellow;
+                    display: grid;
+                    place-items: center;
+
+                }
+                section{
+                    background: pink;
+                    color:blueviolet;
+                    text-align: center;
+                    padding: 20px;
+                    border-radius: 5px;
+                }
+                p{
+                    font-size: 100px;
+                }
+            </style>
+        </head>
+        <body>
+            <section>
+            <h1>Contador 60</h1>
+            <p1=id>0</p>
+          
+            <button onclick="aumentar()">Mais</button>
+            <button onclick="diminuir()">Menos</button>
+            </section>
+
+            <section>
+                <h1>Contador 60</h1>
+                <p2=id>0</p>
+                <button onclick="aumentar1()">Mais</button>
+                <button onclick="diminuir1()">Menos</button>
+                </section>
+
+            <script>
+                let numero1 = 0
+                let numero2 = 0
+
+                function aumentar(){
+                    numero = numero + 1
+                    mostrarNaTela()
+                }
+                function diminuir(){
+                    numero = numero - 1
+                   
+                    mostrarNaTela()
+                }
+                
+                function aumentar1(){
+                    numero = numero + 1
+                    mostrarNaTela1()
+                }
+                function diminuir1(){
+                    numero = numero - 1
+                   
+                    mostrarNaTela1()
+                }
+
+
+                function mostrarNaTela(){
+                    const p1 = document.getElementById("p1")
+                    p1.innerText = numero
+                }
+
+                function mostrarNaTela1(){
+                    const p2 = document.getElementById("p2")
+                    p2.innerText = numero
+                }
+
+
+
+                render()
+            </script>
+        </body>
+    </html>
