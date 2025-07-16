@@ -30,18 +30,16 @@
         <body>
             <section>
             <h1>Contador 60</h1>
-            <p1=id>0</p>
+            <p id="p1"></p>
           
             <button onclick="aumentar()">Mais</button>
             <button onclick="diminuir()">Menos</button>
+            
+                
+            <p id="p2"></p>
+            <button onclick="sumar()">Mais</button>
+            <button onclick="restar()">Menos</button>
             </section>
-
-            <section>
-                <h1>Contador 60</h1>
-                <p2=id>0</p>
-                <button onclick="aumentar1()">Mais</button>
-                <button onclick="diminuir1()">Menos</button>
-                </section>
 
             <script>
                 let numero1 = 0
@@ -52,35 +50,33 @@
                     mostrarNaTela()
                 }
                 function diminuir(){
-                    numero = numero - 1
-                   
+                    numero = numero - 1 
                     mostrarNaTela()
                 }
                 
-                function aumentar1(){
+                function sumar(){
                     numero = numero + 1
                     mostrarNaTela1()
                 }
-                function diminuir1(){
+                function restar(){
                     numero = numero - 1
-                   
                     mostrarNaTela1()
                 }
 
 
                 function mostrarNaTela(){
                     const p1 = document.getElementById("p1")
-                    p1.innerText = numero
+                    p1.innerText = numero1
                 }
 
                 function mostrarNaTela1(){
                     const p2 = document.getElementById("p2")
-                    p2.innerText = numero
+                    p2.innerText = numero2
                 }
 
-
-
-                render()
+                mostrarNaTela()
+                mostrarNaTela1()
+              
             </script>
         </body>
     </html>
